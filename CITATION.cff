@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "The Narrow Regime of Thermal-Aware Anytime Inference: When Early-Exit Selection Helps on Edge CPUs, and When It Does Not"
+type: software
+authors:
+  - family-names: "Jacob"
+    given-names: "Manu Nicholas"
+    orcid: "https://orcid.org/0009-0007-6589-6572"
+repository-code: "https://github.com/manunicholasjacob/thermal-aware-anytime-inference"
+url: "https://manunicholasjacob.com/"
+abstract: >-
+  Data and code for an operating-regime study of thermal-aware anytime (early-exit) inference on a
+  Raspberry Pi 5 (Arm Cortex-A76). Under saturating load, exit depth does not control temperature;
+  the thermal lever exists only at fixed sub-saturation rates. Under a binding thermal cap the
+  adaptive controller is the only policy that is both thermally safe and more accurate than the
+  safe fallback, at the cost of a 5.4x p99/p50 latency ratio. INT8 has its own narrow regime:
+  QOperator export is a pessimization at every exit, correct QDQ export pays only from the second
+  exit onward, and quantization compresses the exit ladder's latency span from 20.6x to 6.9x,
+  shrinking the range the thermal controller trades against.
+license: MIT
+version: "1.0.0"
+date-released: "2026-08-24"
+keywords:
+  - "anytime inference"
+  - "early exit"
+  - "thermal management"
+  - "edge inference"
+  - "INT8 quantization"
+  - "ONNX Runtime"
+  - "Raspberry Pi 5"

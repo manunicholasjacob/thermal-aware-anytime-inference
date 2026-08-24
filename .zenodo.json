@@ -1,0 +1,30 @@
+{
+  "title": "The Narrow Regime of Thermal-Aware Anytime Inference: When Early-Exit Selection Helps on Edge CPUs, and When It Does Not",
+  "upload_type": "software",
+  "license": "mit",
+  "access_right": "open",
+  "version": "v1.0.0",
+  "creators": [
+    {
+      "name": "Jacob, Manu Nicholas",
+      "orcid": "0009-0007-6589-6572"
+    }
+  ],
+  "keywords": [
+    "anytime inference",
+    "early exit",
+    "thermal management",
+    "edge inference",
+    "INT8 quantization",
+    "ONNX Runtime",
+    "Raspberry Pi 5"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/manunicholasjacob/thermal-aware-anytime-inference",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}
