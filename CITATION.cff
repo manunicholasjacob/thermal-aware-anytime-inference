@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software or its results, please cite it as below."
 title: "The Narrow Regime of Thermal-Aware Anytime Inference: When Early-Exit Selection Helps on Edge CPUs, and When It Does Not"
+doi: "10.5281/zenodo.22163329"
 type: software
 authors:
   - family-names: "Jacob"
