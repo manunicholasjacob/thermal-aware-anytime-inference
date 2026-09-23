@@ -1,0 +1,120 @@
+[
+  {
+    "policy": "adaptive-band3.0",
+    "n": 84000,
+    "real_acc": 26.160714285714285,
+    "mean_temp": 48.078333333333326,
+    "max_temp": 49.05,
+    "cap_viol_s": 3,
+    "p50": 0.18411106429994106,
+    "p99": 0.6753730121999979,
+    "exit_mix": {
+      "final": 5.0,
+      "exit2": 45.0,
+      "exit1": 50.0
+    },
+    "cap": 49.0,
+    "band": 3.0,
+    "run_index": 0,
+    "is_repeat_reference": false,
+    "temp_before": 47.4
+  },
+  {
+    "policy": "adaptive-band1.0",
+    "n": 84000,
+    "real_acc": 25.95952380952381,
+    "mean_temp": 48.64666666666667,
+    "max_temp": 50.15,
+    "cap_viol_s": 22,
+    "p50": 0.12120394967496395,
+    "p99": 0.749686404597014,
+    "exit_mix": {
+      "final": 13.3,
+      "exit2": 35.0,
+      "exit1": 51.7
+    },
+    "cap": 49.0,
+    "band": 1.0,
+    "run_index": 1,
+    "is_repeat_reference": false,
+    "temp_before": 47.95
+  },
+  {
+    "policy": "adaptive-band5.0",
+    "n": 84000,
+    "real_acc": 33.148809523809526,
+    "mean_temp": 47.00583333333334,
+    "max_temp": 49.05,
+    "cap_viol_s": 1,
+    "p50": 0.19768497440963984,
+    "p99": 0.759797233622521,
+    "exit_mix": {
+      "final": 43.4,
+      "exit2": 56.6
+    },
+    "cap": 49.0,
+    "band": 5.0,
+    "run_index": 2,
+    "is_repeat_reference": false,
+    "temp_before": 45.75
+  },
+  {
+    "policy": "adaptive-band2.0",
+    "n": 84000,
+    "real_acc": 32.90833333333333,
+    "mean_temp": 47.7575,
+    "max_temp": 49.6,
+    "cap_viol_s": 3,
+    "p50": 0.19583303947001696,
+    "p99": 0.7530771580059076,
+    "exit_mix": {
+      "final": 23.3,
+      "exit2": 76.7
+    },
+    "cap": 49.0,
+    "band": 2.0,
+    "run_index": 3,
+    "is_repeat_reference": false,
+    "temp_before": 45.75
+  },
+  {
+    "policy": "adaptive-band4.0",
+    "n": 84000,
+    "real_acc": 25.082142857142856,
+    "mean_temp": 48.1425,
+    "max_temp": 49.6,
+    "cap_viol_s": 4,
+    "p50": 0.11822197120636702,
+    "p99": 0.6881681678351014,
+    "exit_mix": {
+      "final": 3.3,
+      "exit2": 38.3,
+      "exit1": 58.3
+    },
+    "cap": 49.0,
+    "band": 4.0,
+    "run_index": 4,
+    "is_repeat_reference": false,
+    "temp_before": 47.4
+  },
+  {
+    "policy": "adaptive-band3.0",
+    "n": 84000,
+    "real_acc": 20.164285714285715,
+    "mean_temp": 48.44500000000001,
+    "max_temp": 49.05,
+    "cap_viol_s": 14,
+    "p50": 0.11507398448884487,
+    "p99": 0.671594424638897,
+    "exit_mix": {
+      "final": 1.7,
+      "exit2": 3.3,
+      "exit1": 95.0
+    },
+    "cap": 49.0,
+    "band": 3.0,
+    "run_index": 5,
+    "is_repeat_reference": true,
+    "temp_before": 46.3
+  }
+]

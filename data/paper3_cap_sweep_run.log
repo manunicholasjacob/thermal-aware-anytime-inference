@@ -1,0 +1,30 @@
+[0;93m2026-09-22 03:37:43.763115137 [W:onnxruntime:Default, device_discovery.cc:325 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:92 ReadFileContents Failed to open file: "/sys/class/drm/card1/device/vendor"[m
+cap sweep: rate=1400/s dur=60s order=[49.0, 46.0, 51.0, 47.0, 50.0, 48.0, 49.0]
+cap=49.0 always-exit1   acc= 19.49% viol=  44s meanT= 49.1 maxT= 50.1 mix={'exit1': 100.0}
+cap=49.0 always-final   acc= 33.69% viol=  59s meanT= 50.0 maxT= 51.2 mix={'final': 100.0}
+cap=49.0 adaptive-ctrl  acc= 33.42% viol=   1s meanT= 47.5 maxT= 49.0 mix={'final': 70.0, 'exit2': 30.0}
+cap=46.0 always-exit1   acc= 19.49% viol=  23s meanT= 45.9 maxT= 47.4 mix={'exit1': 100.0}
+cap=46.0 always-final   acc= 33.69% viol=  60s meanT= 49.3 maxT= 50.1 mix={'final': 100.0}
+cap=46.0 adaptive-ctrl  acc= 19.94% viol=  20s meanT= 45.7 maxT= 47.4 mix={'final': 1.7, 'exit2': 1.7, 'exit1': 96.7}
+cap=51.0 always-exit1   acc= 19.49% viol=   0s meanT= 46.1 maxT= 47.4 mix={'exit1': 100.0}
+cap=51.0 always-final   acc= 33.69% viol=   0s meanT= 49.3 maxT= 50.1 mix={'final': 100.0}
+cap=51.0 adaptive-ctrl  acc= 33.69% viol=   0s meanT= 47.8 maxT= 49.0 mix={'final': 100.0}
+cap=47.0 always-exit1   acc= 19.49% viol=   2s meanT= 46.2 maxT= 47.4 mix={'exit1': 100.0}
+cap=47.0 always-final   acc= 33.69% viol=  59s meanT= 49.3 maxT= 50.7 mix={'final': 100.0}
+cap=47.0 adaptive-ctrl  acc= 32.77% viol=   1s meanT= 45.9 maxT= 47.4 mix={'final': 1.7, 'exit2': 98.3}
+cap=50.0 always-exit1   acc= 19.49% viol=   0s meanT= 46.0 maxT= 47.4 mix={'exit1': 100.0}
+cap=50.0 always-final   acc= 33.69% viol=   3s meanT= 49.1 maxT= 50.1 mix={'final': 100.0}
+cap=50.0 adaptive-ctrl  acc= 33.69% viol=   0s meanT= 47.8 maxT= 49.0 mix={'final': 100.0}
+cap=48.0 always-exit1   acc= 19.49% viol=   0s meanT= 45.8 maxT= 46.9 mix={'exit1': 100.0}
+cap=48.0 always-final   acc= 33.69% viol=  52s meanT= 48.8 maxT= 49.6 mix={'final': 100.0}
+cap=48.0 adaptive-ctrl  acc= 33.69% viol=   0s meanT= 47.4 maxT= 48.0 mix={'final': 100.0}
+cap=49.0 always-exit1   acc= 19.49% viol=   0s meanT= 46.3 maxT= 48.0 mix={'exit1': 100.0}
+cap=49.0 always-final   acc= 33.69% viol=  51s meanT= 49.3 maxT= 50.1 mix={'final': 100.0}
+cap=49.0 adaptive-ctrl  acc= 33.27% viol=   2s meanT= 47.4 maxT= 49.0 mix={'final': 58.4, 'exit2': 41.6}
+
+wrote /home/manu/paper3_cap_sweep.json
+
+drift check at cap 49 C (first pass vs last pass):
+   always-exit1   acc  19.49 ->  19.49   viol   44 ->    0   meanT  49.1 ->  46.3
+   always-final   acc  33.69 ->  33.69   viol   59 ->   51   meanT  50.0 ->  49.3
+   adaptive-ctrl  acc  33.42 ->  33.27   viol    1 ->    2   meanT  47.5 ->  47.4

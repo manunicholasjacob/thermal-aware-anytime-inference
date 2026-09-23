@@ -1,0 +1,10 @@
+[0;93m2026-09-22 04:09:02.010190875 [W:onnxruntime:Default, device_discovery.cc:325 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:92 ReadFileContents Failed to open file: "/sys/class/drm/card1/device/vendor"[m
+band sweep: cap=49.0 rate=1400/s dur=60s order=[3.0, 1.0, 5.0, 2.0, 4.0, 3.0]
+band=3.0 acc= 26.16% viol=   3s meanT= 48.1 maxT= 49.0 mix={'final': 5.0, 'exit2': 45.0, 'exit1': 50.0}
+band=1.0 acc= 25.96% viol=  22s meanT= 48.6 maxT= 50.1 mix={'final': 13.3, 'exit2': 35.0, 'exit1': 51.7}
+band=5.0 acc= 33.15% viol=   1s meanT= 47.0 maxT= 49.0 mix={'final': 43.4, 'exit2': 56.6}
+band=2.0 acc= 32.91% viol=   3s meanT= 47.8 maxT= 49.6 mix={'final': 23.3, 'exit2': 76.7}
+band=4.0 acc= 25.08% viol=   4s meanT= 48.1 maxT= 49.6 mix={'final': 3.3, 'exit2': 38.3, 'exit1': 58.3}
+band=3.0 acc= 20.16% viol=  14s meanT= 48.4 maxT= 49.0 mix={'final': 1.7, 'exit2': 3.3, 'exit1': 95.0}
+wrote /home/manu/paper3_band_sweep.json
+drift check at band 3.0 C: acc 26.16 -> 20.16, viol 3 -> 14, meanT 48.1 -> 48.4

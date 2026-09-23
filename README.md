@@ -46,6 +46,9 @@ data/
   paper3_clean_dataset.json     the evaluation subset, after cleaning
   paper3_controller_results.json  controller runs at both thermal caps
   paper3_qdq_calib.json         calibration sweep, MinMax at 256/1024/2048
+  paper3_controller_reps.json   five repetitions of each controller arm
+  paper3_cap_sweep.json         the thermal-cap sweep, with its run log
+  paper3_band_sweep.json        the band-width sweep, with its run log
 code/
   paper3_thermal_probe.py       thermal characterisation under load
   paper3_controller_exp.py      the adaptive controller experiment
@@ -55,8 +58,35 @@ code/
   paper3_clean_dataset.py       dataset cleaning
   paper3_final_accuracy.py      accuracy at each exit
   paper3_preproc_sweep.py       preprocessing sensitivity
+  paper3_reps.py                the repetition campaign
+  paper3_cap_sweep.py           the thermal-cap sweep
+  paper3_band_sweep.py          the band-width sweep
+  fill_reps.py, fill_capsweep.py, fill_bandsweep.py
+                                regenerate the manuscript's macro files
   gen_fig_p3.py, gen_fig_p3b.py figures
+paper/
+  numbers_reps.tex, numbers_capsweep.tex, numbers_bandsweep.tex
+                                generated, committed as generated
 ```
+
+## Reproducing
+
+Python 3.11 or newer, standard library only, plus `matplotlib` for the figures.
+
+```bash
+python code/fill_reps.py        # controller repetitions
+python code/fill_capsweep.py    # the thermal-cap sweep
+python code/fill_bandsweep.py   # the band-width sweep
+python code/gen_fig_p3b.py      # figure
+```
+
+The three `paper/numbers_*.tex` files these write are the ones the manuscript includes, and they
+are committed here as generated. Running the commands above and then `git diff` is therefore the
+check: it comes back empty.
+
+The band sweep is the one worth reading closely, because it is a negative result that the paper
+keeps rather than drops. Within-configuration spread is 0.74 of the across-configuration spread,
+so the band width is not separable from run-to-run variation on this board.
 
 ## Hardware and provenance
 
