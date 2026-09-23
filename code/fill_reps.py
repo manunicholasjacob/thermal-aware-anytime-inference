@@ -79,7 +79,7 @@ put("ViolCut", "%.0f" % (
 put("AccOverExitOne", "%.1f" % (
     st.mean([x["real_acc"] for x in a]) - st.mean([x["real_acc"] for x in e1])))
 
-open(OUT, "w").write("\n".join(lines) + "\n")
+open(OUT, "w", newline="\n").write("\n".join(lines) + "\n")
 print("wrote", OUT, "(%d macros)" % (len(lines) - 1))
 for pol in ("always-exit1", "always-exit2", "always-final", "adaptive-ctrl"):
     v = by[pol]

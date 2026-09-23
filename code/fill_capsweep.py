@@ -102,7 +102,7 @@ put("CapDriftTempLast", "%.1f" % b["always-exit1"]["mean_temp"])
 put("CapDriftCtrlAccFirst", "%.2f" % a["adaptive-ctrl"]["real_acc"])
 put("CapDriftCtrlAccLast", "%.2f" % b["adaptive-ctrl"]["real_acc"])
 
-open(OUT, "w").write("\n".join(lines) + "\n")
+open(OUT, "w", newline="\n").write("\n".join(lines) + "\n")
 print("wrote", OUT, "(%d macros)" % (len(lines) - 1))
 print("  caps swept: %s" % sorted({k[0] for k in sweep_keys}))
 print("  controller pays at: %s  (window %d C of %d settings)"

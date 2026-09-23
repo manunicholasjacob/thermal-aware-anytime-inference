@@ -64,7 +64,7 @@ for r in sorted(runs, key=lambda r: r["run_index"]):
         r["real_acc"], r["cap_viol_s"], r["exit_mix"].get("exit1", 0.0)))
 put("TableBandSweep", "%\n" + "\n".join(rows))
 
-open(OUT, "w").write("\n".join(lines) + "\n")
+open(OUT, "w", newline="\n").write("\n".join(lines) + "\n")
 print("wrote", OUT, "(%d macros)" % (len(lines) - 1))
 print("  bands %.0f to %.0f C, accuracy %.2f to %.2f (%.1f points across bands)"
       % (min(r["band"] for r in sweep), max(r["band"] for r in sweep),
