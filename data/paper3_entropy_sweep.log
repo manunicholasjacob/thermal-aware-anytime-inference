@@ -1,0 +1,54 @@
+[0;93m2026-10-02 22:24:56.332755330 [W:onnxruntime:Default, device_discovery.cc:325 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:92 ReadFileContents Failed to open file: "/sys/class/drm/card1/device/vendor"[m
+Paper 3 entropy baseline sweep: 5 reps, 4 paper arms + 5 entropy arms, rate=1400/s, cap=49.0 C, 90s each
+start temp 48.0 C
+[rep 1] always-exit1   n= 126000 acc= 19.48% meanT= 48.4 maxT= 49.6 viol= 25s p99=   0.13 startT=48.0 mix={'exit1': 100.0}
+[rep 1] always-exit2   n= 126000 acc= 32.75% meanT= 48.3 maxT= 50.1 viol= 27s p99=   0.21 startT=48.5 mix={'exit2': 100.0}
+[rep 1] always-final   n= 126000 acc= 33.67% meanT= 49.5 maxT= 50.7 viol= 77s p99=   0.89 startT=45.8 mix={'final': 100.0}
+[rep 1] adaptive-ctrl  n= 126000 acc= 33.28% meanT= 47.6 maxT= 49.0 viol=  1s p99=   0.81 startT=46.9 mix={'final': 56.7, 'exit2': 43.3}
+[rep 1] entropy-1.50   n= 126000 acc= 34.19% meanT= 49.5 maxT= 51.2 viol= 74s p99=   1.76 lat=1.181 ideal=0.515 startT=45.2 mix={'final': 82.2, 'exit1': 3.7, 'exit2': 14.1}
+[rep 1] entropy-2.50   n= 126000 acc= 31.50% meanT= 48.8 maxT= 49.6 viol= 53s p99=   1.38 lat=0.823 ideal=0.373 startT=46.9 mix={'exit2': 29.2, 'final': 51.7, 'exit1': 19.1}
+[rep 1] entropy-3.00   n= 126000 acc= 29.09% meanT= 47.2 maxT= 48.5 viol=  0s p99=   1.33 lat=0.560 ideal=0.257 startT=46.3 mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 1] entropy-3.50   n= 126000 acc= 25.08% meanT= 47.3 maxT= 49.6 viol=  2s p99=   1.26 lat=0.282 ideal=0.140 startT=44.6 mix={'exit1': 59.2, 'exit2': 36.1, 'final': 4.7}
+[rep 1] entropy-4.00   n= 126000 acc= 20.33% meanT= 48.5 maxT= 50.1 viol= 30s p99=   0.42 lat=0.155 ideal=0.090 startT=46.9 mix={'exit1': 94.5, 'exit2': 5.5}
+--- rep 1 done, 15.9 min elapsed ---
+[rep 2] always-exit1   n= 126000 acc= 19.48% meanT= 48.9 maxT= 50.1 viol= 59s p99=   0.12 startT=49.0 mix={'exit1': 100.0}
+[rep 2] always-exit2   n= 126000 acc= 32.75% meanT= 46.1 maxT= 47.4 viol=  0s p99=   0.21 startT=46.3 mix={'exit2': 100.0}
+[rep 2] always-final   n= 126000 acc= 33.67% meanT= 49.1 maxT= 50.1 viol= 69s p99=   0.81 startT=45.2 mix={'final': 100.0}
+[rep 2] adaptive-ctrl  n= 126000 acc= 33.67% meanT= 47.8 maxT= 48.5 viol=  0s p99=   0.82 startT=45.8 mix={'final': 100.0}
+[rep 2] entropy-1.50   n= 126000 acc= 34.19% meanT= 49.9 maxT= 51.2 viol= 79s p99=   1.73 lat=1.178 ideal=0.515 startT=45.2 mix={'final': 82.2, 'exit1': 3.7, 'exit2': 14.1}
+[rep 2] entropy-2.50   n= 126000 acc= 31.50% meanT= 48.7 maxT= 49.6 viol= 42s p99=   1.39 lat=0.826 ideal=0.373 startT=46.3 mix={'exit2': 29.2, 'final': 51.7, 'exit1': 19.1}
+[rep 2] entropy-3.00   n= 126000 acc= 29.09% meanT= 46.8 maxT= 48.0 viol=  0s p99=   1.33 lat=0.560 ideal=0.257 startT=45.8 mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 2] entropy-3.50   n= 126000 acc= 25.08% meanT= 47.1 maxT= 48.5 viol=  0s p99=   1.26 lat=0.282 ideal=0.140 startT=45.2 mix={'exit1': 59.2, 'exit2': 36.1, 'final': 4.7}
+[rep 2] entropy-4.00   n= 126000 acc= 20.33% meanT= 48.6 maxT= 49.6 viol= 34s p99=   0.42 lat=0.155 ideal=0.090 startT=46.9 mix={'exit1': 94.5, 'exit2': 5.5}
+--- rep 2 done, 31.8 min elapsed ---
+[rep 3] always-exit1   n= 126000 acc= 19.48% meanT= 46.4 maxT= 47.4 viol=  0s p99=   0.13 startT=47.4 mix={'exit1': 100.0}
+[rep 3] always-exit2   n= 126000 acc= 32.75% meanT= 48.0 maxT= 50.1 viol= 17s p99=   0.21 startT=46.9 mix={'exit2': 100.0}
+[rep 3] always-final   n= 126000 acc= 33.67% meanT= 50.3 maxT= 51.2 viol= 90s p99=   0.80 startT=49.0 mix={'final': 100.0}
+[rep 3] adaptive-ctrl  n= 126000 acc= 33.33% meanT= 47.6 maxT= 49.6 viol=  3s p99=   0.79 startT=46.9 mix={'final': 61.1, 'exit2': 38.9}
+[rep 3] entropy-1.50   n= 126000 acc= 34.19% meanT= 50.0 maxT= 51.8 viol= 81s p99=   1.63 lat=1.151 ideal=0.515 startT=45.8 mix={'final': 82.2, 'exit1': 3.7, 'exit2': 14.1}
+[rep 3] entropy-2.50   n= 126000 acc= 31.50% meanT= 48.8 maxT= 49.6 viol= 54s p99=   1.36 lat=0.817 ideal=0.373 startT=46.9 mix={'exit2': 29.2, 'final': 51.7, 'exit1': 19.1}
+[rep 3] entropy-3.00   n= 126000 acc= 29.09% meanT= 47.1 maxT= 48.0 viol=  0s p99=   1.33 lat=0.558 ideal=0.257 startT=45.8 mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 3] entropy-3.50   n= 126000 acc= 25.08% meanT= 47.1 maxT= 48.5 viol=  0s p99=   1.26 lat=0.283 ideal=0.140 startT=45.2 mix={'exit1': 59.2, 'exit2': 36.1, 'final': 4.7}
+[rep 3] entropy-4.00   n= 126000 acc= 20.33% meanT= 48.5 maxT= 50.1 viol= 27s p99=   0.42 lat=0.155 ideal=0.090 startT=46.9 mix={'exit1': 94.5, 'exit2': 5.5}
+--- rep 3 done, 47.7 min elapsed ---
+[rep 4] always-exit1   n= 126000 acc= 19.48% meanT= 48.5 maxT= 50.7 viol= 39s p99=   0.13 startT=48.5 mix={'exit1': 100.0}
+[rep 4] always-exit2   n= 126000 acc= 32.75% meanT= 46.1 maxT= 47.4 viol=  0s p99=   0.21 startT=45.8 mix={'exit2': 100.0}
+[rep 4] always-final   n= 126000 acc= 33.67% meanT= 49.4 maxT= 50.7 viol= 79s p99=   0.81 startT=46.3 mix={'final': 100.0}
+[rep 4] adaptive-ctrl  n= 126000 acc= 33.50% meanT= 47.6 maxT= 50.1 viol=  1s p99=   0.81 startT=46.3 mix={'final': 81.1, 'exit2': 18.9}
+[rep 4] entropy-1.50   n= 126000 acc= 34.19% meanT= 49.9 maxT= 51.8 viol= 78s p99=   1.69 lat=1.162 ideal=0.515 startT=45.2 mix={'final': 82.2, 'exit1': 3.7, 'exit2': 14.1}
+[rep 4] entropy-2.50   n= 126000 acc= 31.50% meanT= 48.6 maxT= 49.6 viol= 37s p99=   1.46 lat=0.826 ideal=0.373 startT=46.9 mix={'exit2': 29.2, 'final': 51.7, 'exit1': 19.1}
+[rep 4] entropy-3.00   n= 126000 acc= 29.09% meanT= 46.9 maxT= 47.4 viol=  0s p99=   1.33 lat=0.559 ideal=0.257 startT=46.3 mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 4] entropy-3.50   n= 126000 acc= 25.08% meanT= 47.1 maxT= 49.0 viol=  1s p99=   1.26 lat=0.283 ideal=0.140 startT=44.6 mix={'exit1': 59.2, 'exit2': 36.1, 'final': 4.7}
+[rep 4] entropy-4.00   n= 126000 acc= 20.33% meanT= 48.6 maxT= 49.6 viol= 33s p99=   0.42 lat=0.154 ideal=0.090 startT=47.4 mix={'exit1': 94.5, 'exit2': 5.5}
+--- rep 4 done, 63.6 min elapsed ---
+[rep 5] always-exit1   n= 126000 acc= 19.48% meanT= 46.3 maxT= 48.0 viol=  0s p99=   0.13 startT=47.4 mix={'exit1': 100.0}
+[rep 5] always-exit2   n= 126000 acc= 32.75% meanT= 47.7 maxT= 49.0 viol=  1s p99=   0.21 startT=46.3 mix={'exit2': 100.0}
+[rep 5] always-final   n= 126000 acc= 33.67% meanT= 48.3 maxT= 49.0 viol= 10s p99=   0.81 startT=46.9 mix={'final': 100.0}
+[rep 5] adaptive-ctrl  n= 126000 acc= 33.67% meanT= 47.5 maxT= 48.5 viol=  0s p99=   0.81 startT=45.2 mix={'final': 100.0}
+[rep 5] entropy-1.50   n= 126000 acc= 34.19% meanT= 49.6 maxT= 50.7 viol= 76s p99=   1.68 lat=1.160 ideal=0.515 startT=45.2 mix={'final': 82.2, 'exit1': 3.7, 'exit2': 14.1}
+[rep 5] entropy-2.50   n= 126000 acc= 31.50% meanT= 48.3 maxT= 49.6 viol= 12s p99=   1.36 lat=0.819 ideal=0.373 startT=46.3 mix={'exit2': 29.2, 'final': 51.7, 'exit1': 19.1}
+[rep 5] entropy-3.00   n= 126000 acc= 29.09% meanT= 48.5 maxT= 50.1 viol= 43s p99=   1.33 lat=0.559 ideal=0.257 startT=45.2 mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 5] entropy-3.50   n= 126000 acc= 25.08% meanT= 46.0 maxT= 47.4 viol=  0s p99=   1.26 lat=0.283 ideal=0.140 startT=45.8 mix={'exit1': 59.2, 'exit2': 36.1, 'final': 4.7}
+[rep 5] entropy-4.00   n= 126000 acc= 20.33% meanT= 47.3 maxT= 49.0 viol=  2s p99=   0.42 lat=0.154 ideal=0.090 startT=46.3 mix={'exit1': 94.5, 'exit2': 5.5}
+--- rep 5 done, 79.5 min elapsed ---
+wrote /home/manu/paper3_entropy_sweep.json after 79.5 min

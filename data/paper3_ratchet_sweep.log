@@ -1,0 +1,55 @@
+[0;93m2026-10-03 21:47:54.902203003 [W:onnxruntime:Default, device_discovery.cc:325 DiscoverDevicesForPlatform] GPU device discovery failed: device_discovery.cc:92 ReadFileContents Failed to open file: "/sys/class/drm/card1/device/vendor"[m
+Paper 3 campaign 3: the ratchet, with starting temperature CONTROLLED.
+targets [45.5, 47.0, 48.5, 50.0] C, arms ['adaptive-ctrl', 'entropy-3.00'], 5 reps, cap 49.0 C, 90 s per run
+board now 48.5 C
+[rep 1] order: entropy-3.00@50.0, entropy-3.00@45.5, entropy-3.00@47.0, adaptive-ctrl@45.5, entropy-3.00@48.5, adaptive-ctrl@48.5, adaptive-ctrl@47.0, adaptive-ctrl@50.0
+[rep 1/1] entropy-3.00   target=50.0 start=49.6(heat 71s) acc= 29.09% meanT= 48.7 viol= 42s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 1/2] entropy-3.00   target=45.5 start=45.8(none 0s) acc= 29.09% meanT= 48.6 viol= 42s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 1/3] entropy-3.00   target=47.0 start=46.9(heat 12s) acc= 29.09% meanT= 46.7 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 1/4] adaptive-ctrl  target=45.5 start=45.8(heat 12s) acc= 33.67% meanT= 46.9 viol=  0s mix={'final': 100.0}
+[rep 1/5] entropy-3.00   target=48.5 start=48.0(heat 71s) acc= 29.09% meanT= 47.3 viol=  3s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 1/6] adaptive-ctrl  target=48.5 start=47.4(heat 47s MISSED) acc= 33.54% meanT= 47.0 viol=  1s mix={'final': 87.8, 'exit2': 12.2}
+[rep 1/7] adaptive-ctrl  target=47.0 start=46.9(heat 27s) acc= 33.67% meanT= 46.9 viol=  0s mix={'final': 100.0}
+[rep 1/8] adaptive-ctrl  target=50.0 start=49.6(heat 130s) acc= 24.94% meanT= 47.2 viol=  5s mix={'exit2': 41.1, 'exit1': 58.9}
+--- rep 1 done, 20.2 min elapsed ---
+[rep 2] order: adaptive-ctrl@47.0, entropy-3.00@50.0, entropy-3.00@45.5, adaptive-ctrl@50.0, entropy-3.00@47.0, adaptive-ctrl@48.5, adaptive-ctrl@45.5, entropy-3.00@48.5
+[rep 2/1] adaptive-ctrl  target=47.0 start=47.4(none 0s) acc= 23.04% meanT= 48.4 viol= 24s mix={'final': 3.3, 'exit2': 23.3, 'exit1': 73.3}
+[rep 2/2] entropy-3.00   target=50.0 start=49.6(heat 12s) acc= 29.09% meanT= 48.9 viol= 51s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 2/3] entropy-3.00   target=45.5 start=44.6(none 0s MISSED) acc= 29.09% meanT= 48.4 viol= 39s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 2/4] adaptive-ctrl  target=50.0 start=50.1(heat 98s) acc= 28.28% meanT= 47.5 viol=  9s mix={'exit2': 20.0, 'exit1': 36.7, 'final': 43.3}
+[rep 2/5] entropy-3.00   target=47.0 start=47.4(heat 27s) acc= 29.09% meanT= 46.6 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 2/6] adaptive-ctrl  target=48.5 start=48.0(heat 71s) acc= 33.44% meanT= 47.3 viol=  2s mix={'final': 75.5, 'exit2': 24.4}
+[rep 2/7] adaptive-ctrl  target=45.5 start=46.3(heat 12s) acc= 33.67% meanT= 47.0 viol=  0s mix={'final': 100.0}
+[rep 2/8] entropy-3.00   target=48.5 start=48.5(heat 71s) acc= 29.09% meanT= 47.3 viol=  2s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+--- rep 2 done, 39.0 min elapsed ---
+[rep 3] order: entropy-3.00@47.0, entropy-3.00@48.5, adaptive-ctrl@48.5, adaptive-ctrl@50.0, entropy-3.00@45.5, entropy-3.00@50.0, adaptive-ctrl@47.0, adaptive-ctrl@45.5
+[rep 3/1] entropy-3.00   target=47.0 start=47.4(heat 47s) acc= 29.09% meanT= 46.8 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 3/2] entropy-3.00   target=48.5 start=48.5(heat 47s) acc= 29.09% meanT= 47.3 viol=  3s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 3/3] adaptive-ctrl  target=48.5 start=48.0(heat 71s) acc= 33.44% meanT= 47.2 viol=  1s mix={'final': 75.6, 'exit2': 24.4}
+[rep 3/4] adaptive-ctrl  target=50.0 start=49.6(heat 130s) acc= 30.23% meanT= 47.5 viol=  6s mix={'exit2': 32.2, 'exit1': 22.2, 'final': 45.5}
+[rep 3/5] entropy-3.00   target=45.5 start=45.2(none 0s) acc= 29.09% meanT= 48.4 viol= 40s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 3/6] entropy-3.00   target=50.0 start=49.6(heat 98s) acc= 29.09% meanT= 48.5 viol= 35s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 3/7] adaptive-ctrl  target=47.0 start=46.9(heat 27s) acc= 33.57% meanT= 47.4 viol=  2s mix={'final': 92.2, 'exit2': 7.8}
+[rep 3/8] adaptive-ctrl  target=45.5 start=46.3(heat 12s) acc= 33.67% meanT= 46.8 viol=  0s mix={'final': 100.0}
+--- rep 3 done, 60.2 min elapsed ---
+[rep 4] order: entropy-3.00@50.0, entropy-3.00@45.5, adaptive-ctrl@50.0, entropy-3.00@47.0, entropy-3.00@48.5, adaptive-ctrl@48.5, adaptive-ctrl@47.0, adaptive-ctrl@45.5
+[rep 4/1] entropy-3.00   target=50.0 start=49.6(heat 130s) acc= 29.09% meanT= 48.0 viol= 20s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 4/2] entropy-3.00   target=45.5 start=45.8(heat 12s) acc= 29.09% meanT= 46.0 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 4/3] adaptive-ctrl  target=50.0 start=50.1(heat 166s) acc= 25.39% meanT= 47.4 viol=  9s mix={'exit2': 10.0, 'exit1': 57.8, 'final': 32.2}
+[rep 4/4] entropy-3.00   target=47.0 start=46.9(heat 27s) acc= 29.09% meanT= 46.5 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 4/5] entropy-3.00   target=48.5 start=48.0(heat 71s) acc= 29.09% meanT= 46.9 viol=  1s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 4/6] adaptive-ctrl  target=48.5 start=48.0(heat 71s) acc= 33.44% meanT= 47.1 viol=  1s mix={'final': 75.6, 'exit2': 24.4}
+[rep 4/7] adaptive-ctrl  target=47.0 start=47.4(heat 47s) acc= 33.59% meanT= 47.3 viol=  1s mix={'final': 92.2, 'exit2': 7.8}
+[rep 4/8] adaptive-ctrl  target=45.5 start=45.8(heat 12s) acc= 33.67% meanT= 46.7 viol=  0s mix={'final': 100.0}
+--- rep 4 done, 83.2 min elapsed ---
+[rep 5] order: adaptive-ctrl@45.5, entropy-3.00@47.0, adaptive-ctrl@48.5, entropy-3.00@50.0, adaptive-ctrl@47.0, entropy-3.00@48.5, entropy-3.00@45.5, adaptive-ctrl@50.0
+[rep 5/1] adaptive-ctrl  target=45.5 start=45.8(heat 12s) acc= 33.67% meanT= 46.6 viol=  0s mix={'final': 100.0}
+[rep 5/2] entropy-3.00   target=47.0 start=46.9(heat 47s) acc= 29.09% meanT= 46.6 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 5/3] adaptive-ctrl  target=48.5 start=48.0(heat 71s) acc= 33.51% meanT= 47.1 viol=  1s mix={'final': 81.1, 'exit2': 18.9}
+[rep 5/4] entropy-3.00   target=50.0 start=50.1(heat 166s) acc= 29.09% meanT= 48.5 viol= 37s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 5/5] adaptive-ctrl  target=47.0 start=46.9(heat 27s) acc= 33.67% meanT= 47.3 viol=  0s mix={'final': 100.0}
+[rep 5/6] entropy-3.00   target=48.5 start=47.4(heat 71s MISSED) acc= 29.09% meanT= 46.6 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 5/7] entropy-3.00   target=45.5 start=45.8(heat 12s) acc= 29.09% meanT= 46.1 viol=  0s mix={'exit1': 33.2, 'final': 27.3, 'exit2': 39.5}
+[rep 5/8] adaptive-ctrl  target=50.0 start=49.0(heat 130s MISSED) acc= 27.27% meanT= 47.4 viol=  9s mix={'exit2': 10.0, 'exit1': 44.5, 'final': 45.5}
+--- rep 5 done, 106.1 min elapsed ---
+wrote /home/manu/paper3_ratchet_sweep.json after 106.1 min. Start target missed on 4 of 40 runs.
