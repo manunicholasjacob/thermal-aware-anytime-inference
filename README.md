@@ -1,5 +1,7 @@
 # The Narrow Regime of Thermal-Aware Anytime Inference
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22163329.svg)](https://doi.org/10.5281/zenodo.22163329)
+
 Data and code for an operating-regime study of thermal-aware anytime (early-exit) inference on a
 Raspberry Pi 5 (Arm Cortex-A76).
 
@@ -99,7 +101,8 @@ unit and its cooling, and the orderings and ratios as the transferable part.
 
 ## Citation
 
-See `CITATION.cff`, or use the DOI badge once the first release is archived.
+See `CITATION.cff`, or cite the concept DOI
+[10.5281/zenodo.22163329](https://doi.org/10.5281/zenodo.22163329), which always resolves to the latest version.
 
 ## License
 
