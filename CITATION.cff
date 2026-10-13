@@ -20,8 +20,8 @@ abstract: >-
   exit onward, and quantization compresses the exit ladder's latency span from 20.6x to 6.9x,
   shrinking the range the thermal controller trades against.
 license: MIT
-version: "1.0.0"
-date-released: "2026-08-24"
+version: "2.0.0"
+date-released: "2026-10-13"
 keywords:
   - "anytime inference"
   - "early exit"
