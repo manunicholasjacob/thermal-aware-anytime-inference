@@ -1,5 +1,6 @@
 {
   "title": "The Narrow Regime of Thermal-Aware Anytime Inference: When Early-Exit Selection Helps on Edge CPUs, and When It Does Not",
+  "description": "Data and code for an operating-regime study of thermal-aware anytime (early-exit) inference on a Raspberry Pi 5 (Arm Cortex-A76): when early-exit selection controls die temperature and when it does not. Includes the measurement harness, an entropy-threshold early-exit baseline, randomised-order and controlled-starting-temperature campaigns, the raw run data and the figure generators. Negative results are included.",
   "upload_type": "software",
   "license": "mit",
   "access_right": "open",
